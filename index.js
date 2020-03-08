@@ -1,7 +1,8 @@
 var i ;
 var pinkJeannie = 4;
 var gameView= document.getElementById("jeannie");
-var range = 400;
+var success = document.getElementById("success");
+var range = 200;
 var styleTop; 
 var styleLeft; 
 var img;
@@ -9,8 +10,9 @@ var theBody = document.getElementsByTagName("body")[0];
 function gamePlay(){
 
     for (i =0 ; i < pinkJeannie;i++){
+
         img = document.createElement("img");
-        img.src="pinkJeannie.gif";
+        img.src="pinkJeannie2.gif";
         styleTop = generateRandomStyle(range);
         img.style.top=styleTop;
         styleLeft = generateRandomStyle(range);
@@ -18,7 +20,11 @@ function gamePlay(){
         gameView.appendChild(img);
     }   
     var evilJin = document.createElement("img");
-    evilJin.src="evilJeannie.gif";
+    styleTop = generateRandomStyle(range);
+    evilJin.style.top=styleTop;
+    styleLeft = generateRandomStyle(range);
+    evilJin.style.left=styleLeft;
+    evilJin.src="evilJeannie2.gif";
     gameView.appendChild(evilJin)
 
     gameView.lastChild.onclick = 
@@ -27,11 +33,11 @@ function gamePlay(){
                 while (gameView.firstChild) gameView.removeChild(gameView.firstChild);
                 theBody.onclick = null; //Nothing should happen when the user clicks the body once game over
                 gameView.lastChild.onclick = null;
-               
             };
 
 
             theBody.onclick = function multiplyJeannie() {
+                alert("Oops! \n Try Again !");//show a message to the user
                 event.stopPropagation(); //To avoid event bubbling
                 pinkJeannie*=2;
                 while (gameView.firstChild) gameView.removeChild(gameView.firstChild);

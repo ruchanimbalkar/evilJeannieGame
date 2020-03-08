@@ -2,27 +2,34 @@ body{
     margin: 2px;
     padding:8px;
     background-color: pink;
-    font-family: 'Tangerine', monospace;
-    font-size: 31px;
-  
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+    font-stretch: extra-expanded;
+
 }
 
 h1,h2,p{
     color:white;
 }
-
+p{
+    font-weight: bold;
+}
 div{
-       width:100px;
-       height:100px;
-        position:absolute;
+   
+    width:100px;
+    height:50px;
+    position:absolute;
+    
 }
 
-#jeannie{
-    left:50px;
-}
+
+
 
 img{
+   
     width:90%;
     position: absolute;
-    border-radius:50%;
+    border-radius:15%;
+    padding-left: 50%;
+  
 }
