@@ -29,10 +29,17 @@ function gamePlay(){
 
     gameView.lastChild.onclick = 
             function nextLevel(event) {
-                alert("Good Job! \n You caught the evil Jeannie!");//show a message to the user
+                alert("Good Job! \n You caught the evil Jeannie!");//show success msg to user
                 while (gameView.firstChild) gameView.removeChild(gameView.firstChild);
-                theBody.onclick = null; //Nothing should happen when the user clicks the body once game over
+                var newHeading = document.createElement("h4");
+                newHeading.innerText="You are my new master!";
+                success.appendChild(newHeading);
+                var newImg = document.createElement("img");
+                newImg.src="happyJeannie.gif";
+                success.appendChild(newImg);
+               theBody.onclick = null; //Nothing should happen when the user clicks the body once game over
                 gameView.lastChild.onclick = null;
+               
             };
 
 

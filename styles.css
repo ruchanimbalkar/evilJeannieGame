@@ -8,13 +8,17 @@ body{
 
 }
 
+header img {
+    float: right;
+    width:15%;
+}
 h1,h2,p{
     color:white;
 }
 p{
     font-weight: bold;
 }
-div{
+#jeannie{
    
     width:100px;
     height:50px;
@@ -22,10 +26,23 @@ div{
     
 }
 
+h4{
+
+ display: inline;
+ border: 3px solid lightblue;
+ font-style: italic;
+      
+}
+#success img{
+    border-radius: 1%;
+    width:15%;
+    padding-left:10%;
+    
+}
 
 
 
-img{
+#jeannie img{
    
     width:90%;
     position: absolute;
