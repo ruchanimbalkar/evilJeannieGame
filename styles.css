@@ -1,0 +1,28 @@
+body{
+    margin: 2px;
+    padding:8px;
+    background-color: pink;
+    font-family: 'Tangerine', monospace;
+    font-size: 31px;
+  
+}
+
+h1,h2,p{
+    color:white;
+}
+
+div{
+       width:100px;
+       height:100px;
+        position:absolute;
+}
+
+#jeannie{
+    left:50px;
+}
+
+img{
+    width:90%;
+    position: absolute;
+    border-radius:50%;
+}
